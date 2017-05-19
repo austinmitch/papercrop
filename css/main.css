@@ -1,0 +1,98 @@
+body {
+  /*background-color: rgb(63, 46, 139);*/
+  background: -moz-linear-gradient(-45deg, #1fc19c 0%, #1cb2cd 100%);
+  background: -webkit-linear-gradient(-45deg, #1fc19c 0%, #1cb2cd 100%);
+  background: linear-gradient(135deg, #1fc19c 0%,#1cb2cd 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: arial, helvetica, sans-serif;
+}
+
+.uploadForm {
+  width: 40%;
+  margin: 200px auto;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  padding: 60px
+}
+
+.uploadForm h1 {
+  color: #fff;
+  padding: 15px;
+  background-color: rgb(63,46,139);
+  margin: -100px auto 50px auto;
+  text-align: center;
+  width: 30%;
+}
+
+.uploadForm form {
+  margin: 0 auto;
+}
+
+.uploadForm form label {
+  color: #fff;
+  font-size: 17px;
+  display: block;
+  text-align: center;
+}
+
+.uploadForm form input {
+  display: block;
+  margin: 15px auto 25px auto;
+  height: 40px;
+  width: 60%;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+}
+
+
+.uploadForm form #wallpaper {
+  display: none;
+}
+
+.uploadForm form .customUpload {
+  margin-bottom: 30px;
+  font-size: 25px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+.uploadForm form .customUpload:hover {
+  background: rgb(77, 47, 161);
+}
+
+.uploadForm form .submit {
+  position: relative;
+  top: 135px;
+  height: 100px;
+  /*background-color: rgb(63,46,139);*/
+  background: -moz-linear-gradient(-45deg, #1fc19c 0%, #1cb2cd 100%);
+  background: -webkit-linear-gradient(-45deg, #1fc19c 0%, #1cb2cd 100%);
+  background: linear-gradient(135deg, #1fc19c 0%,#1cb2cd 100%);
+  font-size: 35px;
+  transition: all 0.3s ease;
+  margin-top: -120px;
+}
+
+/*@keyframes glare
+{
+  0% {height:0px}
+
+  50% {height: 100px;}
+
+  100% {height:0px; top:-100px;}
+}
+
+.glare {
+  background-color: rgba(255,255,255,0.5);
+  width: 100px;
+  position: absolute;
+}
+
+.uploadForm form .submit:hover + .glare {
+  animation: glare 1s;
+}*/
