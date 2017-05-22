@@ -19,10 +19,12 @@
           <label for="prefix">File Name Prefix</label>
           <input type="text" name="prefix" id="prefix">
           <input type="submit" name="submit" value="Resize" class="submit">
-          <div class="glare"></div>
         </form>
       </div>
 
+      <div class="downloadLink">
+        <?php print($download) ?>
+      </div>
     </section>
   </body>
 </html>

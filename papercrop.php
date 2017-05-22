@@ -56,8 +56,10 @@ ini_set("max_file_uploads","200");
       $prefix = $_POST["prefix"];
 
       //set up new path info
-      $target_path = 'images/';
+      $target_path = 'images/'.$prefix.'/';
       $newname = $prefix.time().'.'.$extension;
+
+      mkdir($target_path);
 
       $target_path .= $newname;
 
@@ -105,7 +107,14 @@ ini_set("max_file_uploads","200");
       $resize_wall->saveImage($target_path,100);
     }
 
+    $zip = new ZipArchive();
+    $zip_name = 'images/'.$prefix.'.zip';
+    $zip->open($zip_name, ZipArchive::CREATE);
+    $zip->addGlob('images/'.$prefix.'/*.jpg');
+    $zip->addGlob('images/'.$prefix.'/*.png');
+    $zip->close($zip_name);
 
+    $download = '<a class="download" href="'.$zip_name.'">Download</a>';
   }
 
  ?>
